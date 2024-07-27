@@ -1,7 +1,8 @@
 class Note():
-    def __init__(self, freq):
+    def __init__(self, freq, time):
         self.freq = freq
         self.note = self.get_note_from_frequency(freq)
+        self.time = time
 
     #using AI for this one because the code is kinda big
     def get_note_from_frequency(self, frequency):
